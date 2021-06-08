@@ -1,6 +1,6 @@
-import Expenses from './components/Expenses'
+import ExpenseItem from './components/ExpenseItem'
 
-function App() {
+function App(props) {
   const expenses = [
     {
       id: 'e1',
@@ -22,12 +22,7 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ]
-  return (
-    <div className='App'>
-      <h1>happy coding</h1>
-      <Expenses items={expenses} />
-    </div>
-  )
+  return <div className='App'></div>
 }
 
 export default App
