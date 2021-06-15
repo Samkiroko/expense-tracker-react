@@ -4,6 +4,9 @@ import ExpenseDate from './ExpenseDate'
 import './ExpenseItem.css'
 
 function ExpenseItem(props) {
+  const clickHandler = () => {
+    setTitle('Update!')
+  }
   return (
     <Card className='expense-item'>
       <ExpenseDate date={props.date} />
